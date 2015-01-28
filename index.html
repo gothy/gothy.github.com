@@ -113,8 +113,7 @@ li {
     <p>Last.fm: <a href="http://www.lastfm.ru/user/gothy"
       target="_blank">gothy</a></p>
     <br/>
-    <p>Email: <a id="email" href="mailto:dmitry.utkin">
-      dmitry.utkin</a></p>
+    <p>Email: <a id="email" href="mailto:dmitry.utkin">dmitry.utkin</a></p>
     <!-- <p>Skype: <a href="skype:gothyshape?chat">gothyshape</a></p> -->
     
   </div>
@@ -145,9 +144,9 @@ li {
 <script type="text/coffeescript">
 jQuery ->
   $email = $('#email');
-  fullEmail = $email.attr('href') + '@gmail.com'
+  fullEmail = $email.html() + '@gmail.com'
 
-  $email.attr('href', fullEmail)
+  $email.attr('href', 'mailto:' + fullEmail)
   $email.html(fullEmail)
 </script>
 
