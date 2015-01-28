@@ -18,130 +18,109 @@
 
 <style type="text/css">
 body {
-	padding-top: 10px;
+  padding-top: 10px;
 }
 
 li {
-	color: #404040;
+  color: #404040;
 }
 
 </style>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/coffee-script/1.7.1/coffee-script.min.js"></script>
-<script src="utils.js"></script>
-
-<script type="text/coffeescript">
-enableLogs()
-
-jQuery ->
-	$("body").bind "click", (e) ->
-		$('.dropdown-toggle, .menu').parent("li").removeClass "open"
-	
-
-	$(".dropdown-toggle, .menu").click (e) ->
-		$li = $(this).parent("li").toggleClass 'open'
-		return false
-
-	$('#email').attr('href', $('#email').attr('href') + '@gmail.com')
-	$('#email').html($('#email').html() + '@gmail.com')
-</script>
 
 </head>
 
 <body>
 
 <!--div class="topbar">
-	<div class="topbar-inner" style="background: #aaa;">
-		<div class="container-fluid">
-			<h2>Dmitry Utkin a.k.a gothy</h2>
-			
-			
-		</div>
-	</div>
+  <div class="topbar-inner" style="background: #aaa;">
+    <div class="container-fluid">
+      <h2>Dmitry Utkin a.k.a gothy</h2>
+      
+      
+    </div>
+  </div>
 </div-->
 
 <div class="container">
 
-	<div class="content" style="">
-		<img src="./blog_photo.png" border="0" width="200px" height="264px"/>
-		<h1>Dmitry Utkin</h1>
+  <div class="content" style="">
+    <img src="./blog_photo.png" border="0" width="200px" height="264px"/>
+    <h1>Dmitry Utkin</h1>
 
-		<h2>Who am I</h2>
+    <h2>Who am I</h2>
 
-		<p>I'm a 28 year old software developer / team lead / architect / whatever 
-		from Odessa, Ukraine. </p>
-		
-		<p>Started to code when I was 15 and still can't stop myself  
-		building new software :)</p>
+    <p>I'm a 28 year old software developer from Odessa, Ukraine. </p>
+    
+    <p>Started to code when I was 15 and still can't stop myself  
+    building new software :)</p>
 
 
-		<h2>What I did</h2>
-		<p>I did a lot of things in mobile. Like one of the most popular 
-		mobile IM clients available on the market. Took part in building clients 
-		for variety of mobile platforms. Also wrote lots of 
-		backend code in Java long time ago...</p>
+    <h2>What I did</h2>
+    <p>I did a lot of things in mobile. Like one of the most popular 
+    mobile IM clients available on the market. Took part in building clients 
+    for variety of mobile platforms. Also wrote lots of 
+    backend code in Java long time ago...</p>
 
-		<h2>What I'm doing now</h2>
-		<p>I'm focused on the web. It's really the most interesting 
-		and trending area in modern software development, IMHO.</p>
-		<p>Scalable web systems and rich web user interfaces - 
-		this stuff really excites me :) </p>
+    <h2>What I'm doing now</h2>
+    <p>I'm focused on the web. It's really the most interesting 
+    and trending area in modern software development, IMHO.</p>
+    <p>Scalable web systems and rich web user interfaces - 
+    this stuff really excites me :) </p>
 
-		<h2>What I've created lately</h2>
-		<p><a href="http://monitorius.com" target="_blank">Monitorius</a> is a bootstrapped startup, 
-			uptime monitoring made simple. Not longer available.</p>
-		<p><a href="https://plus.im" target="_blank">IM+ Web</a> is my favorite product, 
-			a web-based multiprotocol IM client.
-		</p>
-		<p><a href="http://plus.im/bar/" target="_blank">IM+ Bar</a> is a spinoff of IM+ Web, 
-			it's an IM+ as a browser extension for Firefox/Chrome/Safari/Opera.
-		</p>
-		<p><a href="http://olanola.com/" target="_blank">Olanola</a> is a work-in-progress 
-			on one of the user-generated content news site, known in Russia as Mirtesen.ru
-		</p>
-		<p><i>Filestrash</i> is currently in development. It's a file sharing service with rich UI\UX.
-		</p>
+    <h2>What I've created lately</h2>
+    <p><a href="http://monitorius.com" target="_blank">Monitorius</a> is a bootstrapped startup, 
+      uptime monitoring made simple. Not longer available.</p>
+    <p><a href="https://plus.im" target="_blank">IM+ Web</a> is my favorite product, 
+      a web-based multiprotocol IM client.
+    </p>
+    <p><a href="http://plus.im/bar/" target="_blank">IM+ Bar</a> is a spinoff of IM+ Web, 
+      it's an IM+ as a browser extension for Firefox/Chrome/Safari/Opera.
+    </p>
+    <p><a href="http://olanola.com/" target="_blank">Olanola</a> is a work-in-progress 
+      on one of the user-generated content news site, known in Russia as Mirtesen.ru
+    </p>
+    <p><i>Filestrash</i> is currently in development. It's a file sharing service with rich UI\UX.
+    </p>
 
-		<h2>What I use </h2>
-		<p>Languages: CoffeeScript, JavaScript, Python, Go </p>
-		<p>Hosting: DigitalOcean, Linode, Rackspace Cloud, Amazon EC2, Hetzner, 1und1</p>
-		Tools: <ul>
-			<li>OS X, Linux</li>
-			<li>Backbone.js, jQuery(+UI+Mobile), Bootstrap, Zurb Foundation, Kango Framework. Digging new stuff like AngularJS, Vue.js and React</li>
-			<li>Node.js, revel, Django, CherryPy, Tornado, Flask</li>
-			<li>Redis, mongoDB, MySQL. Played a bit with Cassandra</li> 
-			<li>git, nginx, RabbitMQ, Socket.IO/tornadio, Orbited and lots of other stuff...</li>
-		</ul>
+    <h2>What I use </h2>
+    <p>Languages: JavaScript(ES6, Node), CoffeeScript. Also Python and Go sometimes.</p>
+    <p>Hosting: DigitalOcean, Linode, Rackspace Cloud, Amazon EC2, Hetzner, 1und1</p>
+    Tools: <ul>
+      <li>OS X, Linux</li>
+      <li>Backbone.js, jQuery(+UI+Mobile), ReactJS, Bootstrap, Zurb Foundation, Kango Framework. Like to dig into new stuff every day.</li>
+      <li>Node.js, revel, Django, CherryPy, Tornado, Flask</li>
+      <li>Redis, mongoDB, MySQL. Played a bit with Cassandra</li>
+      <li>git, nginx, RabbitMQ, Socket.IO/tornadio, Orbited and lots of other stuff...</li>
+    </ul>
 
-		<h2>Resume</h2>
-		<p>Check out my formal 
-			<a href="http://resume.io/gothy/conailauk3" target="_blank">resume</a>
-			if you like.</p>
+    <h2>Resume</h2>
+    <p>Check out my formal 
+      <a href="http://resume.io/gothy/conailauk3" target="_blank">resume</a>
+      if you like.</p>
 
-		<h2>Contacts and social profiles</h2>
-		<p>LinkedIn: <a href="http://www.linkedin.com/pub/dmitry-utkin/2a/523/777" 
-			target="_blank">Dmitry Utkin</a></p>
-		<p>Angel.co: <a href="https://angel.co/dmitry-utkin" target="_blank">Dmitry Utkin</a></p>
-		<!-- <p>МойКруг: <a href="http://gothy.moikrug.ru/" 
-			target="_blank">Дмитрий Уткин</a></p> -->
-		<p>Github: <a href="https://github.com/gothy/" target="_blank">gothy</a></p>
-		<p>Facebook: <a href="http://www.facebook.com/profile.php?id=701797518">
-			Dmitry Utkin</a></p>
-		<p>Google+: <a href="https://plus.google.com/u/0/111485936584908987685/posts"
-			target="_blank">Dmitry Utkin</a></p>
-		<p>Twitter: <a href="https://twitter.com/#!/gothy" target="_blank">@gothy</a></p>
-		<p>Last.fm: <a href="http://www.lastfm.ru/user/gothy"
-			target="_blank">gothy</a></p>
-		<br/>
-		<p>Email: <a id="email" href="mailto:dmitry.utkin">
-			dmitry.utkin</a></p>
-		<!-- <p>Skype: <a href="skype:gothyshape?chat">gothyshape</a></p> -->
-		
-	</div>
-	<footer>
-		<p>&copy; gothy, last update 29 April 2014</p>
-	</footer>
+    <h2>Contacts and social profiles</h2>
+    <p>LinkedIn: <a href="http://www.linkedin.com/pub/dmitry-utkin/2a/523/777" 
+      target="_blank">Dmitry Utkin</a></p>
+    <p>Angel.co: <a href="https://angel.co/dmitry-utkin" target="_blank">Dmitry Utkin</a></p>
+    <!-- <p>МойКруг: <a href="http://gothy.moikrug.ru/" 
+      target="_blank">Дмитрий Уткин</a></p> -->
+    <p>Github: <a href="https://github.com/gothy/" target="_blank">gothy</a></p>
+    <p>Facebook: <a href="http://www.facebook.com/profile.php?id=701797518">
+      Dmitry Utkin</a></p>
+    <p>Google+: <a href="https://plus.google.com/u/0/111485936584908987685/posts"
+      target="_blank">Dmitry Utkin</a></p>
+    <p>Twitter: <a href="https://twitter.com/#!/gothy" target="_blank">@gothy</a></p>
+    <p>Last.fm: <a href="http://www.lastfm.ru/user/gothy"
+      target="_blank">gothy</a></p>
+    <br/>
+    <p>Email: <a id="email" href="mailto:dmitry.utkin">
+      dmitry.utkin</a></p>
+    <!-- <p>Skype: <a href="skype:gothyshape?chat">gothyshape</a></p> -->
+    
+  </div>
+  <footer>
+    <p>&copy; gothy, last update 28 Jan 2015</p>
+  </footer>
 </div>
 
 
@@ -159,5 +138,18 @@ jQuery ->
   })();
 
 </script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/coffee-script/1.7.1/coffee-script.min.js"></script>
+
+<script type="text/coffeescript">
+jQuery ->
+  $email = $('#email');
+  fullEmail = $email.attr('href') + '@gmail.com'
+
+  $email.attr('href', fullEmail)
+  $email.html(fullEmail)
+</script>
+
 </body>
 </html>
