@@ -31,15 +31,6 @@ li {
 
 <body>
 
-<!--div class="topbar">
-  <div class="topbar-inner" style="background: #aaa;">
-    <div class="container-fluid">
-      <h2>Dmitry Utkin a.k.a gothy</h2>
-      
-      
-    </div>
-  </div>
-</div-->
 
 <div class="container">
 
@@ -49,7 +40,7 @@ li {
 
     <h2>Who am I</h2>
 
-    <p>I'm a 28 year old software developer from Odessa, Ukraine. </p>
+    <p>I'm a 29 year old software developer from Odessa, Ukraine. </p>
     
     <p>Started to code when I was 15 and still can't stop myself  
     building new software :)</p>
@@ -68,7 +59,7 @@ li {
     this stuff really excites me :) </p>
 
     <h2>What I've created lately</h2>
-    <p><a href="http://monitorius.com" target="_blank">Monitorius</a> is a bootstrapped startup, 
+    <p><a href="http://monitorius.com" target="_blank">Monitorius</a> is a bootstrapped startup,
       uptime monitoring made simple. Not longer available.</p>
     <p><a href="https://plus.im" target="_blank">IM+ Web</a> is my favorite product, 
       a web-based multiprotocol IM client.
@@ -79,47 +70,57 @@ li {
     <p><a href="http://olanola.com/" target="_blank">Olanola</a> is a work-in-progress 
       on one of the user-generated content news site, known in Russia as Mirtesen.ru
     </p>
-    <p><i>Filestrash</i> is currently in development. It's a file sharing service with rich UI\UX.
+    <p><a href="http://alfafile.net/" target="_blank">Alfafile</a> 
+      is currently in development\migration state from Backbone to React/Flux.
+      It's a file sharing service with rich UI\UX.
+    </p>
+    <p><i>AerialBold Typewriter</i> is currently in development, based on the research from 
+      Kickstarter 
+      <a href="https://www.kickstarter.com/projects/357538735/aerial-bold-kickstart-the-planetary-search-for-let/description" target="_blank">campaign</a>.
     </p>
 
     <h2>What I use </h2>
-    <p>Languages: JavaScript(ES6, Node), CoffeeScript. Also Python and Go sometimes.</p>
-    <p>Hosting: DigitalOcean, Linode, Rackspace Cloud, Amazon EC2, Hetzner, 1und1</p>
+    <p>Languages: JavaScript(ES6, Node), CoffeeScript. Some Python and Go in the past.</p>
+    <p>Hosting: DigitalOcean, Linode, Rackspace Cloud, Amazon EC2, etc.</p>
     Tools: <ul>
       <li>OS X, Linux</li>
-      <li>Backbone.js, jQuery(+UI+Mobile), ReactJS, Bootstrap, Zurb Foundation, Kango Framework,
-      gulp, browserify, Sass. Like to dig into new stuff every day.</li>
-      <li>Node.js, revel, Django, CherryPy, Tornado, Flask</li>
+      <li>ReactJS, Backbone.js, jQuery(UI, Mobile), Bootstrap, Zurb Foundation, Kango Framework,
+      gulp, browserify, webpack, Sass. Like to dig into new stuff every day.</li>
+      <li>express, revel, Django, Flask</li>
       <li>Redis, mongoDB, MySQL. Played a bit with Cassandra</li>
       <li>git, nginx, RabbitMQ, Socket.IO/tornadio, Orbited and lots of other stuff...</li>
     </ul>
 
     <h2>Resume</h2>
-    <p>Check out my formal 
-      <a href="http://resume.io/gothy/conailauk3" target="_blank">resume</a>
-      if you like.</p>
+    <p>
+      Check out my formal 
+      <a href="http://resume.io/gothy/conailauk3" target="_blank">resume</a> if you like.
+    </p>
 
     <h2>Contacts and social profiles</h2>
     <p>LinkedIn: <a href="http://www.linkedin.com/pub/dmitry-utkin/2a/523/777" 
-      target="_blank">Dmitry Utkin</a></p>
+      target="_blank">Dmitry Utkin</a>
+    </p>
     <p>Angel.co: <a href="https://angel.co/dmitry-utkin" target="_blank">Dmitry Utkin</a></p>
     <!-- <p>МойКруг: <a href="http://gothy.moikrug.ru/" 
       target="_blank">Дмитрий Уткин</a></p> -->
     <p>Github: <a href="https://github.com/gothy/" target="_blank">gothy</a></p>
     <p>Facebook: <a href="http://www.facebook.com/profile.php?id=701797518">
-      Dmitry Utkin</a></p>
+      Dmitry Utkin</a>
+    </p>
     <p>Google+: <a href="https://plus.google.com/u/0/111485936584908987685/posts"
-      target="_blank">Dmitry Utkin</a></p>
+      target="_blank">Dmitry Utkin</a>
+    </p>
     <p>Twitter: <a href="https://twitter.com/#!/gothy" target="_blank">@gothy</a></p>
     <p>Last.fm: <a href="http://www.lastfm.ru/user/gothy"
-      target="_blank">gothy</a></p>
+      target="_blank">gothy</a>
+    </p>
     <br/>
     <p>Email: <a id="email" href="mailto:dmitry.utkin">dmitry.utkin</a></p>
     <!-- <p>Skype: <a href="skype:gothyshape?chat">gothyshape</a></p> -->
-    
   </div>
   <footer>
-    <p>&copy; gothy, last update 28 Jan 2015</p>
+    <p>&copy; gothy, last update 22 June 2015</p>
   </footer>
 </div>
 
@@ -144,7 +145,7 @@ li {
 
 <script type="text/coffeescript">
 jQuery ->
-  $email = $('#email');
+  $email = $('#email')
   fullEmail = $email.html() + '@gmail.com'
 
   $email.attr('href', 'mailto:' + fullEmail)
